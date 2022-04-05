@@ -6,7 +6,7 @@ sides = ["avocado", "bell peppers", "carrots", "asparagus", "spinach", "beets", 
 desserts = ["cake", "brownie", "cookies", "ice cream", "fruit", "parfait", "pie"];
 
 var outputText = document.getElementById("outputIntro");
-var output = document.getElementById("outputDiv"); //output displays generated meal
+var output = document.getElementById("output"); //output displays generated meal
 
 //submit button generates meal via an event listener
 var submitButton = document.getElementById("submit");
@@ -28,7 +28,7 @@ function generate(){
   var randDesserts = Math.floor(Math.random()*desserts.length);
 
   outputText.innerText = "Try this Meal for " + day + " :";
-
+  output.innerText = proteins[randProtein] + " " +  carbs[randCarb] + " " + sides[randSide1], + " " + sides[randSide2] + " " + desserts[randDesserts];
 
 }
 
