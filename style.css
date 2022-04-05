@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+html{
+  background-color: lightgreen;
+}
+
+h1, h2, h3{
+
+}
+
+input[type=checkbox]{
+  padding: 5vmin;
+}
+
+input[type=submit]{
+  padding: 1.5vmin;
+}

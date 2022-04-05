@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Generator</title>
+  </head>
+  <body>
+    <h1>Generate a Meal</h1>
+    <h2>Here are some random meal ideas!</h2>
+
+    <form class="day" action="index.html" method="post">
+      <label for="mealDay">What day is the meal for: </label><br>
+      <input type="text" name="mealDay" id="day"><br>
+    </form>
+
+    <h3>Include in this meal:</h3>
+    <!-- referencing code from https://www.w3schools.com/html/html_forms.asp -->
+    <form class="mealParts" action="index.html" method="post">
+      <input type="checkbox" name="proteins" id="protein" value="protein">
+      <label for="proteins"> A Protein</label>
+      <input type="checkbox" name="carbs" id="carb" value="carb">
+      <label for="carbs"> Carbs</label><br>
+      <input type="checkbox" name="sides1" id="side1" value="side1">
+      <label for="sides1"> A Side</label>
+      <input type="checkbox" name="sides2" id="side2" value="side2">
+      <label for="sides2"> Another Side</label><br>
+      <input type="checkbox" name="desserts" id="dessert" value="dessert">
+      <label for="desserts"> Dessert</label><br>
+      <input type="submit" name="submit" value="Generate!" id="submit">
+    </form>
+
+    <div class="outputPart">
+      <p class="result" id="outputIntro">No meal yet</p>
+      <div class="randMeal" id="outputDiv">
+
+      </div>
+    </div>
+
+    <script src="randomGenerator.js" charset="utf-8"></script>
+  </body>
+</html>
