@@ -28,7 +28,7 @@ function generate(){
   var randDesserts = Math.floor(Math.random()*desserts.length);
 
   outputText.innerText = "Try this Meal for " + day + " :";
-  output.innerText = proteins[randProtein] + " " +  carbs[randCarb] + " " + sides[randSide1], + " " + sides[randSide2] + " " + desserts[randDesserts];
+  output.innerText = proteins[randProtein] + " " +  carbs[randCarb] + " " + sides[randSide1] + " " + sides[randSide2] + " " + desserts[randDesserts];
 
 }
 

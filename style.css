@@ -23,3 +23,9 @@ input[type=checkbox]{
 input[type=submit]{
   padding: 1.5vmin;
 }
+
+.randMeal{
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
+}
