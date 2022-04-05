@@ -30,6 +30,17 @@ function generate(){
   outputText.innerText = "Try this Meal for " + day + " :";
   output.innerText = proteins[randProtein] + " " +  carbs[randCarb] + " " + sides[randSide1] + " " + sides[randSide2] + " " + desserts[randDesserts];
 
+  var textDeco = ["blink", "line-through", "overline", "underline"];
+  randDeco = Math.floor(Math.random()*textDeco.length);
+  outputText.style.textDecoration = "text-decoration: " + textDeco[randDeco];
+
+  var randR = Math.random()*255;
+  var randG = Math.random()*255;
+  var randB = Math.random()*255;
+  outputText.style.backgroundColor = "rgb(" + randR + randG + randB + ")"
+
+  var randPad = Math.random()*5;
+  outputText.style.padding = randPad + "vmin"; 
 }
 
 // console.log(day, protein, carb, side1, side2, dessert);
