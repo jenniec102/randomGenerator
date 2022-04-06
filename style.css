@@ -12,8 +12,10 @@ html{
   background-color: lightgreen;
 }
 
-h1, h2, h3{
-
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type=checkbox]{
@@ -24,8 +26,10 @@ input[type=submit]{
   padding: 1.5vmin;
 }
 
-.randMeal{
-  /* display: flex;
-  justify-content: center; */
-  width: 100%;
+/* .randMeal{ */
+.output{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-shadow: 0.3vmin 0 0 silver, -0.3vmin 0 0 silver */
 }

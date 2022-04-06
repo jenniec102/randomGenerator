@@ -9,33 +9,33 @@
     <h1>Generate a Meal</h1>
     <h2>Here are some random meal ideas!</h2>
 
-    <form class="day" action="index.html" method="post">
+    <!-- <form class="day" action="index.html" method="post"> -->
       <label for="mealDay">What day is the meal for: </label><br>
       <input type="text" name="mealDay" id="day"><br>
-    </form>
+    <!-- </form> -->
 
     <h3>Include in this meal:</h3>
     <!-- referencing code from https://www.w3schools.com/html/html_forms.asp -->
-    <form class="mealParts" action="index.html" method="post">
-      <input type="checkbox" name="proteins" id="protein" value="protein">
+    <!-- <form class="mealParts" > -->
+      <input type="checkbox" name="proteins" id="protein" checked>
       <label for="proteins"> A Protein</label>
-      <input type="checkbox" name="carbs" id="carb" value="carb">
+      <input type="checkbox" name="carbs" id="carb" checked>
       <label for="carbs"> Carbs</label><br>
-      <input type="checkbox" name="sides1" id="side1" value="side1">
+      <input type="checkbox" name="sides1" id="side1" checked>
       <label for="sides1"> A Side</label>
-      <input type="checkbox" name="sides2" id="side2" value="side2">
+      <input type="checkbox" name="sides2" id="side2" checked>
       <label for="sides2"> Another Side</label><br>
-      <input type="checkbox" name="desserts" id="dessert" value="dessert">
+      <input type="checkbox" name="desserts" id="dessert" checked>
       <label for="desserts"> Dessert</label><br>
       <input type="submit" name="submit" value="Generate!" id="submit">
-    </form>
+    <!-- </form> -->
+    <h3 class="result" id="outputIntro">No meal yet</h3>
+    <h3 id="output"></h3>
 
-    <div class="outputPart">
-      <h3 class="result" id="outputIntro">No meal yet</h3>
-      <div class="randMeal" id="output">
-
+    <!-- <div class="outputPart">
+      <div class="randMeal">
       </div>
-    </div>
+    </div> -->
 
     <script src="randomGenerator.js" charset="utf-8"></script>
   </body>
